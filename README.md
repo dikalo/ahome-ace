@@ -32,6 +32,80 @@ The editor comes with a lot of nice feratures:
 
 
 
+The following components are required to work with Client-IO:
+
+* GWT 2.5 and higher
+* Adobe Flash player 11+
+
+
+##Getting started with ahome-ace
+1) The project does'nt not have a binary. So one will have to build a jar file from source and add it to the classpath
+
+
+2) Inherit the ahome-ace module
+
+```xml
+  <inherits name="com.ait.toolkit.ace.AhomeAce"/>
+```
+
+3) Below is an example how you could create a text file on the client.
+
+```java
+package com.ait.toolkit.clientio.demo.client;
+package com.ait.toolkit.clientio.demo.client;
+
+import com.ait.toolkit.ace.client.AceEditor;
+import com.ait.toolkit.ace.client.AceEditorMode;
+import com.ait.toolkit.ace.client.AceEditorOptions;
+import com.ait.toolkit.ace.client.AceEditorTheme;
+import com.ait.toolkit.sencha.ext.client.core.ExtEntryPoint;
+import com.ait.toolkit.sencha.ext.client.layout.Layout;
+import com.ait.toolkit.sencha.ext.client.ui.Window;
+
+public class AceTest extends ExtEntryPoint {
+
+	private AceEditor edior;
+
+	@Override
+	public void onLoad() {
+
+		Window w = new Window("ACE Editor Test API");
+		w.setLayout(Layout.FIT);
+		w.setSize(700, 400);
+
+		edior = new AceEditor();
+		edior.setTheme(AceEditorTheme.TWILIGHT);
+		edior.setMode(AceEditorMode.JAVASCRIPT);
+
+		AceEditorOptions options = new AceEditorOptions();
+		// options.setEnableBasicAutocompletion(true);
+		options.setEnableLiveAutocompletion(true);
+		edior.setOptions(options);
+
+		w.add(edior);
+		w.show();
+	}
+
+}
+
+
+```
+
+##Real world Demo
+* [Ahomé-Client-IO](http://ahome-it.github.io/ahome-client-io/)
+
+##Issues tracking
+* [Ahomé-Client-IO Issues tracker](https://github.com/ahome-it/ahome-ace/issues)
+
+##Community
+* [Ahomé Google+ Community](https://plus.google.com/u/0/communities/106380618381566688303) - See whats happening in the community.
+
+
+##Enterprise Support
+Get high quality support through Ahomé
+* <a href="http://opensource.ahome-it.com/pricing/">Buy Enterprise Support</a>
+
+
   
 
 
