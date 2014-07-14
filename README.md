@@ -97,9 +97,10 @@ public class AceTest extends ExtEntryPoint {
 	xmlns:x="urn:import:com.ait.toolkit.sencha.ext.client.ui"
 	xmlns:ace="urn:import:com.ait.toolkit.ace.client" >
 	
-	<x:Window ui:field="window" title="ACE Editor demo" layout="fit">
-	   <ace:AceEditor  ui:field="editor"  theme="twillight" mode="javascript" />
+	<x:Window ui:field="window" title="ACE Editor demo" layout="fit" componentHeight="400" componentWidth="700">
+	   <ace:AceEditor  ui:field="editor"  theme="twilight" mode="javascript" />
 	</x:Window>
+	
 </ui:UiBinder> 
 ```
 
