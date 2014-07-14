@@ -96,10 +96,10 @@ public class AceTest extends ExtEntryPoint {
 ```
 
 ##Real world Demo
-* [Ahomé-Client-IO](http://ahome-it.github.io/ahome-client-io/)
+* [Ahomé-Ace Demo](http://ahome-it.github.io/ahome-client-io/)
 
 ##Issues tracking
-* [Ahomé-Client-IO Issues tracker](https://github.com/ahome-it/ahome-ace/issues)
+* [Ahomé-Ace  Issues tracker](https://github.com/ahome-it/ahome-ace/issues)
 
 ##Community
 * [Ahomé Google+ Community](https://plus.google.com/u/0/communities/106380618381566688303) - See whats happening in the community.
