@@ -103,6 +103,58 @@ public class AceTest extends ExtEntryPoint {
 </ui:UiBinder> 
 ```
 
+```java
+package com.ait.toolkit.clientio.demo.client;
+
+import com.ait.toolkit.ace.client.AceEditor;
+import com.ait.toolkit.ace.client.events.BlurEvent;
+import com.ait.toolkit.sencha.ext.client.events.component.ShowEvent;
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.Widget;
+
+public class AceDemo extends Composite {
+
+	private static AceDemoUiBinder uiBinder = GWT.create(AceDemoUiBinder.class);
+
+	interface AceDemoUiBinder extends UiBinder<Widget, AceDemo> {
+	}
+
+	@UiField
+	com.ait.toolkit.sencha.ext.client.ui.Window window;
+
+	@UiField
+	AceEditor editor;
+
+	public AceDemo() {
+		initWidget(uiBinder.createAndBindUi(this));
+	}
+
+	public com.ait.toolkit.sencha.ext.client.ui.Window getWindow() {
+		return window;
+	}
+
+	public AceEditor getEditor() {
+		return editor;
+	}
+
+	@UiHandler("window")
+	public void handlerShow(ShowEvent e) {
+		Window.alert("Show event");
+	}
+
+	@UiHandler("editor")
+	public void handlerBlur(BlurEvent e) {
+		Window.alert("blur event");
+	}
+
+}
+```
+
 ##Real world Demo
 * [Ahomé-Ace Demo](http://ahome-it.github.io/ahome-client-io/)
 
