@@ -4,7 +4,7 @@ ahome-ace
 High performance  web code editor for GWT.
 
 
-![](http://opensource.ahome-it.com/imgs/ace.png)
+![](http://opensource.ahome-it.com/imgs/ace.jpg)
 
 
 ahome-ace is a java API  for the [Ace Editor](http://ace.c9.io/).
