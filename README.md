@@ -35,8 +35,8 @@ The editor comes with a lot of nice feratures:
 The following components are required to work with Client-IO:
 
 * GWT 2.5 and higher
-* Adobe Flash player 11+
-
+* ahome-core project
+ 
 
 ##Getting started with ahome-ace
 1) The project does'nt not have a binary. So one will have to build a jar file from source and add it to the classpath
