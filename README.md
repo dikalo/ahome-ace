@@ -70,7 +70,7 @@ public class AceTest extends ExtEntryPoint {
 	@Override
 	public void onLoad() {
 
-		Window w = new Window("ACE Editor Test API");
+		Window w = new Window("ACE Editor");
 		w.setLayout(Layout.FIT);
 		w.setSize(700, 400);
 
