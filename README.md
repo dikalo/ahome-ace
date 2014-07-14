@@ -92,7 +92,15 @@ public class AceTest extends ExtEntryPoint {
 
 4) ahome-ace also works nicely with GWT's UI Binder
 ```xml
-  <inherits name="com.ait.toolkit.ace.AhomeAce"/>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:x="urn:import:com.ait.toolkit.sencha.ext.client.ui"
+	xmlns:ace="urn:import:com.ait.toolkit.ace.client" >
+	
+	<x:Window ui:field="window" title="ACE Editor demo" layout="fit">
+	   <ace:AceEditor  ui:field="editor"  theme="twillight" mode="javascript" />
+	</x:Window>
+</ui:UiBinder> 
 ```
 
 ##Real world Demo
