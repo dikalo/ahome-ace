@@ -5,7 +5,6 @@
   	<groupId>com.ahome-it</groupId>
   	<artifactId>ahome-lib</artifactId>
   	<version>1.0.0</version>
-  	<relativePath>../../ahome-lib</relativePath>
   </parent>
   <dependencies>
   	<dependency>
