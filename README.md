@@ -4,6 +4,9 @@ ahome-ace
 High performance  web code editor for GWT.
 
 
+![](http://opensource.ahome-it.com/imgs/ace.jpg)
+
+
 ahome-ace is a java API  for the [Ace Editor](http://ace.c9.io/).
 If you want to embed a powerful web based  editor in a GWT application, ahome-ace might be  what you're looking for!
 
@@ -48,7 +51,7 @@ The following components are required to work with Client-IO:
   <inherits name="com.ait.toolkit.ace.AhomeAce"/>
 ```
 
-3) Below is an example how to use the widget.In this example we use our [Ext4j library](https://github.com/ahome-it/ahome-client-io/issues) but ahome-ace is compatible with any GWT library.
+3) Below is an example how to use the widget.In this example we use our [ahome-ext library](https://github.com/ahome-it/ahome-client-io/issues) but ahome-ace is compatible with any GWT library.
 
 
 ```java
