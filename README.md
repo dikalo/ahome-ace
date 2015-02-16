@@ -35,7 +35,7 @@ The editor comes with a lot of nice feratures:
 
 
 
-The following components are required to work with Client-IO:
+The following components are required to work with ahome-ace:
 
 * GWT 2.5 and higher
 * ahome-core project
